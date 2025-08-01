@@ -22,19 +22,14 @@ Desarrollar una API capaz de:
 
 ---
 
-## ⚙️ Setup rápido del entorno
+### ✅ Estado actual (Día 6):
+- FastAPI funcionando en puerto 8000
+- BERT classifier integrado (99.95% accuracy)
+- T5 generator integrado
+- Documentación automática: http://localhost:8000/docs
 
+### 🚀 Cómo probar:
 ```bash
-# Clonar el repositorio
-git clone https://github.com/OzzyMera/bloom-api-tesis.git
-cd bloom-api-tesis
-
-# Crear entorno con conda
-conda create -n bloom-api python=3.9
 conda activate bloom-api
-
-# Instalar dependencias
-pip install -r requirements.txt
-
-# Ejecutar API
-uvicorn src.main:app --reload
+python src/api/main.py  # Terminal 1
+python src/test_api.py  # Terminal 2
